@@ -5,19 +5,24 @@ using UnityEngine;
 public class ButtonEvents : MonoBehaviour
 {
     public int counter = 0;
-    private TestTextChange scriptChanger;
+    TestTextChange testTextChange;
+    public GameObject canvas;
 
-    void start()
+    void Awake()
     {
-        scriptChanger = GameObject.FindObjectOfType<TestTextChange>();
+        testTextChange = canvas.GetComponent<TestTextChange>();
     }
 
-    // Start is called before the first frame update
+    public void backCounter()
+    {
+        counter--;
+        testTextChange.updateText(counter);
+    }
 
     public void updateCounter()
     {
         counter++;
-        scriptChanger.updateText(counter);
+        testTextChange.updateText(counter);
     }
 
 

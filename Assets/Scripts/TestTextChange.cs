@@ -13,16 +13,26 @@ public class TestTextChange : MonoBehaviour
         textMesH = GetComponent<TextMeshPro>();
     }
 
-    // Start is called before the first frame update
+    public void printer()
+    {
+        Debug.Log("Hello World");
+    }
+ 
     public void updateText(int counter)
     {
         //each case is the next iteration for the next part of the tutorial. Strings combined downwards for readability.
         switch (counter)
         {
+            case 0:
+                textMesH.text = "These three objects are scripts that typically work in tangent with one another. When you add ObjectManipulator to an object, Constraints are automatically added (as this is the default).\r\n\r\nTo properly move these objects," +
+                "however, you also need a specific script named UGUIInputAdapterDraggable (you can find this by simply looking this up under \"Assets\" and all.) This is what allows the object to be interacted with.\r\n";
+                break;
+
             case 1:
                 textMesH.text = "First, let's take a look at a default interaction with all of these componenets -- no constraints added. With this box, you can move it around, change its size, and change its rotation. " +
-                "The number of hands you use also matter when using these componenets. You'll notice that you aren't able to change an object's size with just one hand.";
+                "The number of hands you use also matters when using these componenets. You'll notice that you aren't able to change an object's size with just one hand.";
                 break;
+         
         }
     }
 }
