@@ -8,6 +8,8 @@ public class TestTextChange : MonoBehaviour
     public TextMeshPro textMesH;
     public GameObject allCube;
     public GameObject mainSlate;
+    public GameObject rotationCube;
+    public GameObject 
 
     Vector3 originalPosition = new Vector3(0.124f, 1.905f, 2.096f);
     Vector3 leftPosition = new Vector3(-1.071f, 1.905f, 2.096f);
@@ -44,6 +46,9 @@ public class TestTextChange : MonoBehaviour
                 mainSlate.transform.position = leftPosition;
                 allCube.transform.position = rightCubePosition;
                 break;
+
+            case 2:
+                textMesH.text = ""
          
         }
     }
