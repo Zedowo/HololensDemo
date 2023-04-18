@@ -7,17 +7,17 @@ public class ChangeScene : MonoBehaviour
 {
 
     public void LoadFirstScene() {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
     public void LoadSecondScene()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void LoadThirdScene()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 
 }
