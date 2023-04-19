@@ -1359,6 +1359,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7576750127393163460, guid: a5963062303351340bc3be5f71890d29, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8552085927905040085, guid: a5963062303351340bc3be5f71890d29, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -1713,6 +1717,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3962850594424315501, guid: 6aa543308c71300438392efd0eff451e, type: 3}
+      propertyPath: m_Size.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962850594424315501, guid: 6aa543308c71300438392efd0eff451e, type: 3}
+      propertyPath: m_Size.y
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 3962850594424315503, guid: 6aa543308c71300438392efd0eff451e, type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1801,6 +1813,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4865460236951941268, guid: 6aa543308c71300438392efd0eff451e, type: 3}
+      propertyPath: m_Size.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865460236951941268, guid: 6aa543308c71300438392efd0eff451e, type: 3}
+      propertyPath: m_Size.y
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 4865460236951941270, guid: 6aa543308c71300438392efd0eff451e, type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1872,6 +1892,14 @@ PrefabInstance:
     - target: {fileID: 7796270356352320095, guid: 6aa543308c71300438392efd0eff451e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069729774380812136, guid: 6aa543308c71300438392efd0eff451e, type: 3}
+      propertyPath: m_Size.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069729774380812136, guid: 6aa543308c71300438392efd0eff451e, type: 3}
+      propertyPath: m_Size.y
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 8069729774380812138, guid: 6aa543308c71300438392efd0eff451e, type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
