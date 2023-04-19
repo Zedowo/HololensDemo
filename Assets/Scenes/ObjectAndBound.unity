@@ -889,6 +889,7 @@ MonoBehaviour:
   allCube: {fileID: 1382904625}
   mainSlate: {fileID: 1741275891}
   rotationCube: {fileID: 0}
+  radialView: {fileID: 0}
 --- !u!1001 &778244970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1215,6 +1216,10 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6325399774208577936, guid: a5963062303351340bc3be5f71890d29, type: 3}
+      propertyPath: autoFollowAtDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6325399774208577938, guid: a5963062303351340bc3be5f71890d29, type: 3}
       propertyPath: m_Name
       value: SlateBlank
@@ -1317,7 +1322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7576750127393163460, guid: a5963062303351340bc3be5f71890d29, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8552085927905040085, guid: a5963062303351340bc3be5f71890d29, type: 3}
       propertyPath: m_Mesh
@@ -1767,13 +1772,13 @@ MonoBehaviour:
   referenceDirection: 1
   minDistance: 1
   maxDistance: 2
-  minViewDegrees: 0
-  maxViewDegrees: 30
+  minViewDegrees: 90
+  maxViewDegrees: 120
   aspectV: 1
   ignoreAngleClamp: 0
   ignoreDistanceClamp: 0
   useFixedVerticalPosition: 0
-  fixedVerticalPosition: -0.4
+  fixedVerticalPosition: 1.2
   orientToReferenceDirection: 0
 --- !u!114 &1382904635
 MonoBehaviour:
