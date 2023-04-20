@@ -5,14 +5,14 @@ using UnityEngine;
 public class ButtonEvents : MonoBehaviour
 {
     public int counter = 0;
-    TestTextChange testTextChange;
+    ObjectandBoundEvents objectandBoundEvents;
     ChangeMenu changeMenu;
     public GameObject canvas;
 
 
     void Awake()
     {
-        testTextChange = canvas.GetComponent<TestTextChange>();
+        objectandBoundEvents = canvas.GetComponent<ObjectandBoundEvents>();
         changeMenu = canvas.GetComponent<ChangeMenu>();
     }
 
@@ -23,13 +23,13 @@ public class ButtonEvents : MonoBehaviour
             changeMenu.BackwardScene();
         }
         counter--;
-        testTextChange.updateText(counter);
+        objectandBoundEvents.updateText(counter);
     }
 
     public void updateCounter()
     {
         counter++;
-        testTextChange.updateText(counter);
+        objectandBoundEvents.updateText(counter);
     }
 
 

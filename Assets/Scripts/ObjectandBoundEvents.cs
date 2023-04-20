@@ -6,7 +6,7 @@ using Unity.Profiling;
 //using Microsoft.MixedReality.Toolkit.SpatialManipulation;
 using Microsoft.MixedReality.Toolkit.Utilities.Solvers;
 
-public class ObjectandBoundEvents : MonoBehaviour
+public class TestTextChange : MonoBehaviour
     {
         public TextMeshPro textMesH;
         public GameObject allCube;

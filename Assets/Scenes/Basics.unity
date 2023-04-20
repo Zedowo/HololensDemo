@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -274,15 +274,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This tutorial will give you the basics on how certain items in the MRTK
-    (Mixed Reality Toolkit) function as well as give you the oppurtunity to playtest
-    with them. Each page should give you sufficent information on how to interact
-    with the given item, though there will be documentation you can read upon on
-    these items as well. Please report any issues you may find.
-
-
-    Press the "Next"
-    button to navigate to the next page.'
+  m_text: "The Hololens 2 has many options for user interaction. While there is the
+    standard \"walk up and interact\", there are a myraid of options that allow for
+    ease of use.\n\nSome of these include:\n\n     - Gaze and Pinch\n     - Eye Tracking\n    
+    - Speech Recognition"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}
   m_sharedMaterial: {fileID: 21202819797275496, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}
@@ -813,35 +808,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799155871913139099, guid: db5ccdf7b94c18941a0b4b230ad06560, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 799155871913139099, guid: db5ccdf7b94c18941a0b4b230ad06560, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 799155872453589535, guid: db5ccdf7b94c18941a0b4b230ad06560, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 799155872453589535, guid: db5ccdf7b94c18941a0b4b230ad06560, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 799155873064630169, guid: db5ccdf7b94c18941a0b4b230ad06560, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 799155873064630169, guid: db5ccdf7b94c18941a0b4b230ad06560, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 799155873608633088, guid: db5ccdf7b94c18941a0b4b230ad06560, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 799155873608633088, guid: db5ccdf7b94c18941a0b4b230ad06560, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 1021700542837000330, guid: db5ccdf7b94c18941a0b4b230ad06560, type: 3}
       propertyPath: m_textAlignment
@@ -1206,7 +1201,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316567612}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1316567614
 Camera:
   m_ObjectHideFlags: 0
@@ -1377,7 +1372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6325399774584889732, guid: a5963062303351340bc3be5f71890d29, type: 3}
       propertyPath: m_text
-      value: Welcome to the Hololens 2 A-STEM Tutorial Page!
+      value: Basics - Gaze. Movement, and Tracking
       objectReference: {fileID: 0}
     - target: {fileID: 6325399774584889732, guid: a5963062303351340bc3be5f71890d29, type: 3}
       propertyPath: m_fontSize
@@ -1708,11 +1703,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5001694129755255536, guid: 6aa543308c71300438392efd0eff451e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5001694129755255536, guid: 6aa543308c71300438392efd0eff451e, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5001694129755255536, guid: 6aa543308c71300438392efd0eff451e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1724,7 +1719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5001694129755255536, guid: 6aa543308c71300438392efd0eff451e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 5001694129755255536, guid: 6aa543308c71300438392efd0eff451e, type: 3}
       propertyPath: m_AnchoredPosition.y
