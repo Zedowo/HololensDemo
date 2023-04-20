@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Unity.Profiling;
-using Microsoft.MixedReality.Toolkit.SpatialManipulation;
+//using Microsoft.MixedReality.Toolkit.SpatialManipulation;
+using Microsoft.MixedReality.Toolkit.Utilities.Solvers;
 
 public class TestTextChange : MonoBehaviour
     {
@@ -12,19 +13,18 @@ public class TestTextChange : MonoBehaviour
         public GameObject mainSlate;
         public GameObject rotationCube;
 
-        public RadialView radialView;
+        public Follow followMe;
 
         Vector3 originalPosition = new Vector3(0.124f, 1.905f, 2.096f);
         Vector3 leftPosition = new Vector3(-1.071f, 1.905f, 2.096f);
         Vector3 rightCubePosition = new Vector3(0.934f, 1.464f, 2.138f);
-        Vector3 restingCubePosition = new Vector3(1f, -10f, -10f);
+        Vector3 restingCubePosition = new Vector3(1f, 1.658f, 2.45f);
 
-
-        private void Awake()
+        void Awake()
         {
             //find the textMeshPro object
             textMesH = GetComponent<TextMeshPro>();
-            radialView = allCube.GetComponent<RadialView>();
+            followMe = allCube.GetComponent<Follow>();
         }
 
         public void printer()
@@ -40,13 +40,14 @@ public class TestTextChange : MonoBehaviour
                 case 0:
                     textMesH.text = "These three objects are scripts that typically work in tangent with one another. When you add ObjectManipulator to an object, Constraints are automatically added (as this is the default).\r\n\r\nTo properly move these objects," +
                     "however, you also need a specific script named UGUIInputAdapterDraggable (you can find this by simply looking this up under \"Assets\" and all.) This is what allows the object to be interacted with.\r\n";
-                    radialView.enabled = false;
+                    followMe.enabled = false;
+                    allCube.transform.position = restingCubePosition;
                     break;
 
                 case 1:
                     textMesH.text = "First, let's take a look at a default interaction with all of these componenets -- no constraints added. With this box, you can move it around, change its size, and change its rotation. " +
                     "The number of hands you use also matters when using these componenets. You'll notice that you aren't able to change an object's size with just one hand.";
-                    radialView.enabled = true;
+                    followMe.enabled = true;
                     break;
 
                 /*case 2:
