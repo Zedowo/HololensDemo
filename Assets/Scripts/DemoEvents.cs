@@ -8,6 +8,11 @@ public class DemoEvents : MonoBehaviour
     public TextMeshPro textMesH;
     public GameObject allCube;
     public GameObject mainSlate;
+    public GameObject moveCube;
+
+    private int caseScenerio = 0;
+
+    Vector3 originalPosition = new Vector3(0f, 0f, 0f);
 
     void Awake()
     {
@@ -16,6 +21,7 @@ public class DemoEvents : MonoBehaviour
 
     public void updateText(int counter)
     {
+        caseScenerio = counter;
         //each case is the next iteration for the next part of the tutorial. Strings combined downwards for readability.
         switch (counter)
         {
@@ -26,7 +32,8 @@ public class DemoEvents : MonoBehaviour
                 break;
 
             case (1):
-                textMesH.text = "Try to input";
+                textMesH.text = "Try to move the red cube on the top right. In order to put do, hover your hand over the box. You should see a dotted line originating from your pointer. Hold down your hand. The line should turn solid, and you should see the box highlighted." +
+                                "\r\n\r\nDrag the box in the hightlighted area by pulling the cube closer to you.";
                 break;
 
         }
