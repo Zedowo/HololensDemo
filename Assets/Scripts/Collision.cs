@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    public GameObject moveCube;
+    DemoEvents demoEvents;
+    public GameObject navigationMenu;
+
+    void Awake()
     {
-        if (collision.gameObject.name == "flagPole")
+        demoEvents = navigationMenu.GetComponent<DemoEvents>();
+    }
+
+    void Update()
+    {
+        if (transform.rotation.z <= 0.51)
         {
-            Debug.Log("Hit!");
+            demoEvents.collisionRequirement();
         }
     }
 }

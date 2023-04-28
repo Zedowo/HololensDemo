@@ -31,6 +31,4 @@ public class ButtonEvents : MonoBehaviour
         counter++;
         objectandBoundEvents.updateText(counter);
     }
-
-
 }

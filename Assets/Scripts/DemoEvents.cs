@@ -6,10 +6,13 @@ using TMPro;
 public class DemoEvents : MonoBehaviour
 {
     public TextMeshPro textMesH;
+    public ButtonsEventsBasics buttonEvents;
+
     public GameObject allCube;
     public GameObject mainSlate;
     public GameObject moveCube;
-
+    public GameObject navigationMenu;
+    
     private int caseScenerio = 0;
 
     Vector3 originalPosition = new Vector3(0f, 0f, 0f);
@@ -17,6 +20,14 @@ public class DemoEvents : MonoBehaviour
     void Awake()
     {
         textMesH = mainSlate.GetComponent<TextMeshPro>();
+        buttonEvents = navigationMenu.GetComponent<ButtonsEventsBasics>();
+    }
+
+    public void collisionRequirement()
+    {
+        this.updateText(2);
+        caseScenerio++;
+        buttonEvents.updateCollision();
     }
 
     public void updateText(int counter)
