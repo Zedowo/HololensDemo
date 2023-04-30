@@ -31,7 +31,7 @@ public class ButtonsEventsBasics : MonoBehaviour
         demoEvents.updateText(counter);
     }
 
-    public void updateCollision()
+    public void updateCounterNeutral()
     {
         counter++;
     }
