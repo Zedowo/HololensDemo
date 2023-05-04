@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -289,6 +289,134 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1499534004115199935, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
   m_PrefabInstance: {fileID: 177240387}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &354621214
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: constraintsManager
+      value: 
+      objectReference: {fileID: 354621215}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1680532454391346724}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1680532454391346724}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resetColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: updateColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InteractionEvents, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InteractionEvents, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682070, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_Name
+      value: rayCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.042
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.531
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+--- !u!114 &354621215 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3968206999201682066, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+  m_PrefabInstance: {fileID: 354621214}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50cdab0cd5a0916419324bb54314773d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &401478022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -601,6 +729,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1680532454391346724}
@@ -609,11 +741,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1680532454391346724}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
@@ -625,11 +765,19 @@ PrefabInstance:
       value: updateColor
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InteractionEvents, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InteractionEvents, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: InteractionEvents, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
@@ -639,6 +787,10 @@ PrefabInstance:
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682070, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_Name
@@ -8414,7 +8566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 52, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &206171198581276862
@@ -10951,7 +11103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonEvents: {fileID: 0}
   textMesH: {fileID: 0}
-  cubeRenderer: {fileID: 0}
+  cubeRendererGaze: {fileID: 0}
+  cubeRendererRay: {fileID: 0}
   mainSlate: {fileID: 270005429}
   navigationMenu: {fileID: 1680532454391346722}
   gazeCube: {fileID: 674280324}
@@ -12472,7 +12625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 52, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2961364750941243240
@@ -19017,7 +19170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 52, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5179373572131625134

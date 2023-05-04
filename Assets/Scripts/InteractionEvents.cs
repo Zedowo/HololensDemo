@@ -7,14 +7,16 @@ public class InteractionEvents : MonoBehaviour
 {
     public ButtonEventsInteraction buttonEvents;
     public TextMeshPro textMesH;
-    public Renderer cubeRenderer;
+    public Renderer cubeRendererGaze;
+    public Renderer cubeRendererRay;
 
     public GameObject mainSlate;
     public GameObject navigationMenu;
     private int caseScenerio = 0;
     public GameObject gazeCube;
+    private GameObject rayCube;
 
-    Color white = new Color(0f, 0f, 0f, 0f);
+    Color black = new Color(0f, 0f, 0f, 0f);
     Color red = new Color(255f, 0f, 40f, 0.8f);
     Color blue = new Color(0f, 66f, 255f, 0.8f);
     Color green = new Color(8f, 255f, 0f, 0.8f);
@@ -24,18 +26,30 @@ public class InteractionEvents : MonoBehaviour
     {
         textMesH = mainSlate.GetComponent<TextMeshPro>();
         buttonEvents = navigationMenu.GetComponent<ButtonEventsInteraction>();
-        cubeRenderer = gazeCube.GetComponent<Renderer>();
+        cubeRendererGaze = gazeCube.GetComponent<Renderer>();
+        cubeRendererRay = gazeCube.GetComponent<Renderer>();
     }
 
-    public void resetColor()
+    public void resetColorGaze()
     {
-        cubeRenderer.material.SetColor("_Color", white);
+        cubeRendererGaze.material.SetColor("_Color", black);
     }
 
-    public void updateColor()
+    public void updateColorGaze()
     {
-        cubeRenderer.material.SetColor("_Color", red);
+        cubeRendererGaze.material.SetColor("_Color", red);
     }
+
+    public void resetColorRay()
+    {
+        cubeRendererRay.material.SetColor("_Color", black);
+    }
+
+    public void updateColorRay()
+    {
+        cubeRendererRay.material.SetColor("_Color", red);
+    }
+
     /*public IEnumerator changeColors()
     {
         while (true)
