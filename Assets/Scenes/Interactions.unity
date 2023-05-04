@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -585,7 +585,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 674280330}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
@@ -593,20 +601,40 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1680532454391346724}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1680532454391346724}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resetColor
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: updateColor
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InteractionEvents, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InteractionEvents, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: isGazeHovered.onExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682067, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: isGazeHovered.onEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -614,7 +642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682070, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_Name
-      value: allCube
+      value: gazeCube
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_RootOrder
@@ -10923,6 +10951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonEvents: {fileID: 0}
   textMesH: {fileID: 0}
+  cubeRenderer: {fileID: 0}
   mainSlate: {fileID: 270005429}
   navigationMenu: {fileID: 1680532454391346722}
   gazeCube: {fileID: 674280324}

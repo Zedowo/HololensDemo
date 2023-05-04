@@ -7,12 +7,14 @@ public class InteractionEvents : MonoBehaviour
 {
     public ButtonEventsInteraction buttonEvents;
     public TextMeshPro textMesH;
+    public Renderer cubeRenderer;
 
     public GameObject mainSlate;
     public GameObject navigationMenu;
     private int caseScenerio = 0;
     public GameObject gazeCube;
 
+    Color white = new Color(0f, 0f, 0f, 0f);
     Color red = new Color(255f, 0f, 40f, 0.8f);
     Color blue = new Color(0f, 66f, 255f, 0.8f);
     Color green = new Color(8f, 255f, 0f, 0.8f);
@@ -22,11 +24,16 @@ public class InteractionEvents : MonoBehaviour
     {
         textMesH = mainSlate.GetComponent<TextMeshPro>();
         buttonEvents = navigationMenu.GetComponent<ButtonEventsInteraction>();
+        cubeRenderer = gazeCube.GetComponent<Renderer>();
+    }
+
+    public void resetColor()
+    {
+        cubeRenderer.material.SetColor("_Color", white);
     }
 
     public void updateColor()
     {
-        var cubeRenderer = gazeCube.GetComponent<Renderer>();
         cubeRenderer.material.SetColor("_Color", red);
     }
     /*public IEnumerator changeColors()
