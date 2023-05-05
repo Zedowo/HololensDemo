@@ -256,9 +256,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4829899150327526794, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: m_text
-      value: "MRTK is also able to detect certain interactions types from the user.
-        The examples that will be demonstrated will be following:\n\n     - Eye Tracking\n    
-        - Ray Pointing\n     - Hold Detection"
+      value: Finally, the gaze interaction. Focus the object on the center of your
+        screen. It will light up whenever you look at it, but will not activate if
+        your eyes are not tracking the object. You can notice this in your peripheral.
       objectReference: {fileID: 0}
     - target: {fileID: 4829899150327526794, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: m_fontSize
@@ -433,15 +433,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.671
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.035
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.81
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -883,15 +883,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.347
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.531
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.81
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1117,15 +1117,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.015
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.531
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.394
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7441,9 +7441,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Reset
+  m_text: 'Toggle
 
-    Case'
+    Follow
+
+    Cube'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8213,7 +8215,7 @@ GameObject:
   - component: {fileID: 206171198559407610}
   - component: {fileID: 206171198559407605}
   m_Layer: 5
-  m_Name: resetCase
+  m_Name: followCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8728,10 +8730,10 @@ MonoBehaviour:
     onEntered:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
+        - m_Target: {fileID: 1680532454391346724}
+          m_TargetAssemblyTypeName: InteractionEvents, Assembly-CSharp
+          m_MethodName: followTrigger
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8743,10 +8745,10 @@ MonoBehaviour:
     onExited:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
+        - m_Target: {fileID: 1680532454391346724}
+          m_TargetAssemblyTypeName: InteractionEvents, Assembly-CSharp
+          m_MethodName: deFollow
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11426,6 +11428,9 @@ MonoBehaviour:
   gazeCube: {fileID: 674280324}
   rayCube: {fileID: 628323360}
   holdCube: {fileID: 965898819}
+  followMeRay: {fileID: 0}
+  followMeGaze: {fileID: 0}
+  followMeHold: {fileID: 0}
 --- !u!114 &1680532454391346725
 MonoBehaviour:
   m_ObjectHideFlags: 0
