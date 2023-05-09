@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Microsoft.MixedReality.Toolkit.Utilities.Solvers;
+using UnityEngine.SceneManagement;
+
 
 public class InteractionEvents : MonoBehaviour
 {
@@ -153,6 +155,10 @@ public class InteractionEvents : MonoBehaviour
                 followMeRay.enabled = false;
                 rayCube.transform.position = objectStorage;
                 gazeCube.transform.position = centerCubePosition;
+                break;
+
+            case 4:
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 break;
         }
     }

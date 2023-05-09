@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -225,26 +225,26 @@ PrefabInstance:
     - target: {fileID: 3180478119840883085, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1680532454391346725}
     - target: {fileID: 3180478119840883085, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: updateCounter
       objectReference: {fileID: 0}
     - target: {fileID: 3180478119840883085, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ButtonsEventsBasics, Assembly-CSharp
+      value: ButtonEventsInteraction, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3180478120344422296, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1680532454391346725}
     - target: {fileID: 3180478120344422296, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: backCounter
       objectReference: {fileID: 0}
     - target: {fileID: 3180478120344422296, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ButtonsEventsBasics, Assembly-CSharp
+      value: ButtonEventsInteraction, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3866379281530327288, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: m_Mesh
@@ -277,17 +277,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4829899149435423362, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
   m_PrefabInstance: {fileID: 177240387}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270005429}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4479a0bd44d822241a4c5f4890c481c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &270005429 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1499534004115199935, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
-  m_PrefabInstance: {fileID: 177240387}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &354621214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1157,6 +1152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+--- !u!1 &1881967747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4829899150327526796, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
+  m_PrefabInstance: {fileID: 177240387}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1907422904 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2351505567455720332, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
@@ -11423,7 +11423,7 @@ MonoBehaviour:
   cubeRendererGaze: {fileID: 0}
   cubeRendererRay: {fileID: 0}
   cubeRendererHold: {fileID: 0}
-  mainSlate: {fileID: 270005429}
+  mainSlate: {fileID: 1881967747}
   navigationMenu: {fileID: 1680532454391346722}
   gazeCube: {fileID: 674280324}
   rayCube: {fileID: 628323360}
