@@ -1870,7 +1870,7 @@ BoxCollider:
   m_GameObject: {fileID: 1382904625}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1893,7 +1893,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3e399f4c8f94c07469d949416faa944b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1971,7 +1971,7 @@ MonoBehaviour:
   volumeCastSizeOverride: 0
   useLinkedAltScaleOverride: 0
   currentRaycastDirectionMode: 0
-  orientationMode: 0
+  orientationMode: 2
   orientationBlend: 0.65
   keepOrientationVertical: 1
   debugEnabled: 0
