@@ -20,6 +20,9 @@ public class SolverEvents : MonoBehaviour
     public GameObject navigationMenu;
 
     private int caseScenerio = 0;
+    private bool condition1;
+    private bool condition2;
+    private bool condition3;
 
     Vector3 objectStorage = new Vector3(10f, 10f, 10f);
 
@@ -33,25 +36,68 @@ public class SolverEvents : MonoBehaviour
     public void updateText(int counter)
     {
         caseScenerio = counter;
+        this.eventTrigger();
 
         switch (caseScenerio)
         {
             case 0:
                 textMesH.text = "A special subset of scripts that allow for \"smart\" interactions are known as Solvers. These essentially allow unique interactions that react relative to the user. ";
-                followNearMenu.SetActive(false);
                 break;
 
             case 1:
                 textMesH.text = "The most common Solver you will most likely use is the Follow solver. This is what the \"Toggle (x)\" " +
                     "on your Near Menu uses. As the name implies, this Solver, when active, allows an object to follow the tracked object. " +
                     "In this example, the cube will be attached to you and follow you around. Access your Near Menu for customization settings to further manipulate this interaction.";
-                followNearMenu.SetActive(true);
                 break;
+            case 2:
+                textMesH.text = "Another solver you may use is Surface Magnetism. As the name applies, any object with this script will magnetise" +
+                    " to the surface it sees. In this demonstration example, try to hit all of the black points on the surface board WITHOUT moving. " +
+                    "The cube should naturally track with your head. Other interaction types are also possible.";
+                    break;
         }
 
 
     }
 
+    void Update()
+    {
+        switch (caseScenerio)
+        {
+            default:
+                break;
+            case 2:
+                if ((magnetCube.transform.position.x < -0.34 && magnetCube.transform.position.x > -0.36) && (magnetCube.transform.position.y < 0.27 && magnetCube.transform.position.y > .23))
+                {
+                    condition1 = true;
+                }
+                if (condition1 && condition2 && condition3)
+                {
+                    caseScenerio += 1;
+                    buttonEvents.updateCounterNeutral();
+                    updateText(caseScenerio);
+                }
+                break;
+        }
+    }
+
+    public void eventTrigger()
+    {
+        switch (caseScenerio)
+        {
+            case 0:
+                followNearMenu.SetActive(false);
+                followCube.SetActive(false);
+                break;
+            case 1:
+                followNearMenu.SetActive(true);
+                followCube.SetActive(true);
+                break;
+            case 2:
+                followNearMenu.SetActive(false);
+                followCube.SetActive(false);
+                break;
+        }
+    }
     //list of methods to be used for Follow adjustments
 
     public void addMin()
