@@ -51,4 +51,77 @@ public class SolverEvents : MonoBehaviour
 
 
     }
+
+    //list of methods to be used for Follow adjustments
+
+    public void addMin()
+    {
+        followCubeScript.minDistance += 0.1f;
+    }
+
+    public void subtractMin()
+    {
+        if (followCubeScript.minDistance < 0.11)
+        {
+            followCubeScript.minDistance = 0.1f;
+            Debug.Log("Too Low!");
+        }
+        else
+        {
+            followCubeScript.minDistance -= 0.1f;
+        }
+    }
+
+    public void addMax()
+    {
+        followCubeScript.maxDistance += 0.1f;
+    }
+
+    public void subtractMax()
+    {
+        if (followCubeScript.minDistance == 0.1f)
+        {
+            Debug.Log("Too Low!");
+        }
+        else
+        {
+            followCubeScript.minDistance -= 0.1f;
+        }
+    }
+
+    public void addHorizontal()
+    {
+        followCubeScript.maxViewHorizontalDegrees += 10f;
+    }
+
+    public void subtractHorizontal()
+    {
+        if (followCubeScript.maxViewHorizontalDegrees < 11)
+        {
+            followCubeScript.maxViewHorizontalDegrees = 10f;
+            Debug.Log("Too Low!");
+        }
+        else
+        {
+            followCubeScript.maxViewHorizontalDegrees -= 10f;
+        }
+    }
+
+    public void addVertical()
+    {
+        followCubeScript.maxViewVerticalDegrees += 10f;
+    }
+
+    public void subtractVertical()
+    {
+        if (followCubeScript.maxViewVerticalDegrees < 11)
+        {
+            followCubeScript.maxViewVerticalDegrees = 10f;
+            Debug.Log("Too Low!");
+        }
+        else
+        {
+            followCubeScript.maxViewVerticalDegrees -= 10f;
+        }
+    }
 }
