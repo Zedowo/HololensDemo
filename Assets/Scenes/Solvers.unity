@@ -4029,6 +4029,18 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.808892
       objectReference: {fileID: 0}
@@ -22341,7 +22353,7 @@ MonoBehaviour:
   speechRecognitionKeyword: select
   voiceRequiresFocus: 1
   isToggled:
-    active: 0
+    active: 1
     onEntered:
       m_PersistentCalls:
         m_Calls:
@@ -29072,7 +29084,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 52, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &206171198581276862
@@ -30557,7 +30569,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 68, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2961364750941243240

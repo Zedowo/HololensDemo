@@ -188,37 +188,37 @@ public class SolverEvents : MonoBehaviour
 
     public void addHorizontal()
     {
-        followCubeScript.maxViewHorizontalDegrees += 10f;
+        followCubeScript.maxViewHorizontalDegrees += 30f;
     }
 
     public void subtractHorizontal()
     {
-        if (followCubeScript.maxViewHorizontalDegrees < 11)
+        if (followCubeScript.maxViewHorizontalDegrees < 31)
         {
-            followCubeScript.maxViewHorizontalDegrees = 10f;
+            followCubeScript.maxViewHorizontalDegrees = 30f;
             Debug.Log("Too Low!");
         }
         else
         {
-            followCubeScript.maxViewHorizontalDegrees -= 10f;
+            followCubeScript.maxViewHorizontalDegrees -= 30f;
         }
     }
 
     public void addVertical()
     {
-        followCubeScript.maxViewVerticalDegrees += 10f;
+        followCubeScript.maxViewVerticalDegrees += 30f;
     }
 
     public void subtractVertical()
     {
-        if (followCubeScript.maxViewVerticalDegrees < 11)
+        if (followCubeScript.maxViewVerticalDegrees < 31)
         {
-            followCubeScript.maxViewVerticalDegrees = 10f;
+            followCubeScript.maxViewVerticalDegrees = 30f;
             Debug.Log("Too Low!");
         }
         else
         {
-            followCubeScript.maxViewVerticalDegrees -= 10f;
+            followCubeScript.maxViewVerticalDegrees -= 30f;
         }
     }
 }
