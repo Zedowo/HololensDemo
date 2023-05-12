@@ -35,6 +35,7 @@ public class SolverEvents : MonoBehaviour
     Color black = new Color(0f, 0f, 0f, 0.8f);
     Color yellow = new Color(255f, 255f, 0f, 0.8f);
     public AudioSource ring;
+    public AudioSource celebration;
 
     Vector3 objectStorage = new Vector3(10f, 10f, 10f);
     Vector3 originalSlatePosition = new Vector3(-0.216f, 1.78f, 1.612f);
@@ -107,6 +108,7 @@ public class SolverEvents : MonoBehaviour
                 if (condition1 && condition2 && condition3)
                 {
                     buttonEvents.updateCounter();
+                    celebration.Play();
                 }
                 break;
         }
