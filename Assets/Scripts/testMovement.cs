@@ -15,6 +15,6 @@ public class testMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Object.transform.rotation.y);
+        Object.transform.eulerAngles = new Vector3(45, 0, 0);
     }
 }

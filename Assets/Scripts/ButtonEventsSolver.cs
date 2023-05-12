@@ -31,8 +31,4 @@ public class ButtonEventsSolver : MonoBehaviour
         solverEvents.updateText(counter);
     }
 
-    public void updateCounterNeutral()
-    {
-        counter++;
-    }
 }
