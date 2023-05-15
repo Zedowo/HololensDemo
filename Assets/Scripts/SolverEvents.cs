@@ -74,7 +74,11 @@ public class SolverEvents : MonoBehaviour
                     "The cube should naturally track with your head. Other interaction types are also possible.";
                     break;
             case 3:
-                textMesH.text = "Next up!";
+                textMesH.text = "The next scene will explore another solver (Tap to Place) as well as the integration of solvers with spatial awareness. " +
+                    "The interface used in this scene will be vastly different than the ones before; be prepared.";
+                break;
+            case 4:
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 break;
         }
     }

@@ -19,4 +19,9 @@ public class ChangeMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void mainScene()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
