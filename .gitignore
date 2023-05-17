@@ -59,8 +59,5 @@ sysinfo.txt
 crashlytics-build.properties
 
 # MRTK3 Specific Files
-MixedRealityToolkit.Generated/
-MRTK3/
-MRTK.Generated/
 XR/
 XRI/
