@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f18fec9b55c4f818e284af454161962, type: 3}
-  m_Name: New MixedRealitySpeechCommandsProfile
+  m_Name: New MixedRealitySpeechCommandsProfile 1
   m_EditorClassIdentifier: 
   isCustomProfile: 1
   startBehavior: 0
@@ -47,34 +47,6 @@ MonoBehaviour:
   - localizationKey: 
     keyword: Make Planes
     keyCode: 52
-    action:
-      id: 0
-      description: None
-      axisConstraint: 0
-  - localizationKey: 
-    keyword: 'Follow '
-    keyCode: 53
-    action:
-      id: 6
-      description: Trigger
-      axisConstraint: 3
-  - localizationKey: 
-    keyword: Reset
-    keyCode: 0
-    action:
-      id: 0
-      description: None
-      axisConstraint: 0
-  - localizationKey: 
-    keyword: 'Stop '
-    keyCode: 0
-    action:
-      id: 0
-      description: None
-      axisConstraint: 0
-  - localizationKey: 
-    keyword: 
-    keyCode: 0
     action:
       id: 0
       description: None
