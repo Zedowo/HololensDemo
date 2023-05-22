@@ -7,7 +7,11 @@ public class TestPrint : MonoBehaviour
 
     public void printMessage()
     {
-        Debug.Log("I hate my life");
+        Debug.Log("small slate");
     }
 
+    public void printMessageTwo()
+    {
+        Debug.Log("big slate");
+    }
 }

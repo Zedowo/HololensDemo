@@ -60,7 +60,7 @@ public class SolverEvents : MonoBehaviour
         switch (caseScenerio)
         {
             case 0:
-                textMesH.text = "A special subset of scripts that allow for \"smart\" interactions are known as Solvers. These essentially allow unique interactions that react relative to the user. ";
+                textMesH.text = "A special subset of spatial manipulation scripts that allow for \"smart\" interactions are known as Solvers. These essentially allow unique interactions that react relative to the user.";
                 break;
 
             case 1:

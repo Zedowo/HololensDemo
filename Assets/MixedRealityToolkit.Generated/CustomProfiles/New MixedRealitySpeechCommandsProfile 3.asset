@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCustomProfile: 1
   startBehavior: 0
-  recognitionConfidenceLevel: 2
+  recognitionConfidenceLevel: 1
   speechCommands:
   - localizationKey: 
     keyword: Menu
@@ -52,30 +52,51 @@ MonoBehaviour:
       description: None
       axisConstraint: 0
   - localizationKey: 
-    keyword: Slate One
-    keyCode: 0
+    keyword: Activate Small
+    keyCode: 54
     action:
-      id: 0
-      description: None
-      axisConstraint: 0
+      id: 6
+      description: Trigger
+      axisConstraint: 3
   - localizationKey: 
-    keyword: Slate Two
-    keyCode: 0
+    keyword: Activate Large
+    keyCode: 53
     action:
-      id: 0
-      description: None
-      axisConstraint: 0
+      id: 6
+      description: Trigger
+      axisConstraint: 3
   - localizationKey: 
-    keyword: Enable Cube
-    keyCode: 0
+    keyword: White
+    keyCode: 291
     action:
-      id: 0
-      description: None
-      axisConstraint: 0
+      id: 6
+      description: Trigger
+      axisConstraint: 3
   - localizationKey: 
-    keyword: Add Cube
-    keyCode: 0
+    keyword: Black
+    keyCode: 292
     action:
-      id: 0
-      description: None
-      axisConstraint: 0
+      id: 6
+      description: Trigger
+      axisConstraint: 3
+  - localizationKey: 
+    keyword: Blue
+    keyCode: 293
+    action:
+      id: 6
+      description: Trigger
+      axisConstraint: 3
+  - localizationKey: 
+    keyword: Red
+    keyCode: 290
+    action:
+      id: 6
+      description: Trigger
+      axisConstraint: 3
+  - localizationKey: 
+    keyword: Green
+    keyCode: 289
+    action:
+      id: 6
+      description: Trigger
+      axisConstraint: 3

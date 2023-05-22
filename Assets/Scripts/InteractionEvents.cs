@@ -131,30 +131,30 @@ public class InteractionEvents : MonoBehaviour
                 textMesH.text = "MRTK is also able to detect certain interactions types from the user. The examples that will be demonstrated will be following:\r\n\r\n     - Eye Tracking\r\n" +
                     "     - Ray Pointing\r\n     - Hold Detection";
                 followMeHold.enabled = false;
-                holdCube.transform.position = objectStorage;
+                holdCube.SetActive(false);
                 break;
             case 1:
                 textMesH.text = "First, Hold Interactions. When grabbing the object, you'll notice the cube will turn a different color. This \"event\" will stop whenever your hands are off the cube.";
                 followMeRay.enabled = false;
-                holdCube.transform.position = centerCubePosition;
-                rayCube.transform.position = objectStorage;
+                holdCube.SetActive(true);
+                rayCube.SetActive(false);
                 break;
 
             case 2:
                 textMesH.text = "Next, we'll explore the ray interaction. Point your finger towards the cube and align the ray line with box. ";
                 followMeHold.enabled = false;
                 followMeGaze.enabled = false;
-                holdCube.transform.position = objectStorage;
-                rayCube.transform.position = centerCubePosition;
-                gazeCube.transform.position = objectStorage;
+                holdCube.SetActive(false);
+                rayCube.SetActive(true);
+                gazeCube.SetActive(false);
                 break;
 
             case 3:
                 textMesH.text = "Finally, the gaze interaction. Focus the object on the center of your screen. It will light up whenever you look at it, but will not activate if your eyes are not tracking the object. " +
                     "You can notice this in your peripheral vision.";
                 followMeRay.enabled = false;
-                rayCube.transform.position = objectStorage;
-                gazeCube.transform.position = centerCubePosition;
+                rayCube.SetActive(false);
+                rayCube.SetActive(true);
                 break;
 
             case 4:

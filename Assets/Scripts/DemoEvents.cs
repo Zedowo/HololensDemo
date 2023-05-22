@@ -58,9 +58,9 @@ public class DemoEvents : MonoBehaviour
         switch (counter)
         {
             case (0):
-                textMesH.text = "The Hololens 2 has many options for user interaction. While there is the standard \"walk up and interact\", there are a myraid of options that allow for ease of use." +
-                        "\r\n\r\nSome of these include:\r\n\r\n     " +
-                        "- Gaze and Pinch\r\n     - Eye Tracking\r\n     - Speech Recognition\r\n";
+                textMesH.text = "When interacting with MRTK options, the user has a choice to perform three interactions, whether simultaneously or at once. For the sake of these basics, " +
+                    "a few constraints have been placed on the objects to ensure you only perform the intended interaction. These interactions include:\r\n\r\n- Moving (Along any axis)\r\n- " +
+                    "Rotation (Along any axis)\r\n- Scaling \r\n";
                 break;
 
             case (1):
@@ -91,32 +91,32 @@ public class DemoEvents : MonoBehaviour
         switch (caseScenerio)
         {
             case (0):
-                moveCubeHorizontal.transform.position = objectStorage;
+                moveCubeHorizontal.SetActive(false);
                 break;
 
             case (1):
-                moveCubeHorizontal.transform.position = originalMoveCubeHorizontalPosition;
-                flagPole.transform.position = objectStorage;
-                moveCube.transform.position = objectStorage;
+                moveCubeHorizontal.SetActive(true);
+                flagPole.SetActive(false);
+                moveCube.SetActive(false);
                 break;
 
             case (2):
-                moveCubeHorizontal.transform.position = objectStorage;
-                flagPole.transform.position = originalFlagPosition;
-                moveCube.transform.position = originalMoveCubePosition;
-                rotateCube.transform.position = objectStorage;
+                moveCubeHorizontal.SetActive(false);
+                flagPole.SetActive(true);
+                moveCube.SetActive(true);
+                rotateCube.SetActive(false);
                 break;
 
             case (3):
-                flagPole.transform.position = objectStorage;
-                moveCube.transform.position = objectStorage;
-                scaleCube.transform.position = objectStorage;
-                rotateCube.transform.position = originalRotateCubePosition;
+                flagPole.SetActive(false);
+                moveCube.SetActive(false);
+                rotateCube.SetActive(true);
+                scaleCube.SetActive(false);
                 break;
 
             case (4):
-                scaleCube.transform.position = originalRotateCubePosition;
-                rotateCube.transform.position = objectStorage;
+                scaleCube.SetActive(true);
+                rotateCube.SetActive(false);
                 break;
         }
     }
@@ -133,7 +133,6 @@ public class DemoEvents : MonoBehaviour
         }
         else if (caseScenerio == 2)
         {
-            moveCubeHorizontal.transform.position = objectStorage;
             if (moveCube.transform.position.x <= 0.51 && moveCube.transform.position.z <= 1.5)
             {
                 caseScenerio++;
@@ -143,7 +142,6 @@ public class DemoEvents : MonoBehaviour
         }
         else if (caseScenerio == 3)
         {
-            moveCube.transform.position = objectStorage;
             if (rotateCube.transform.rotation.y >= 0.9982956)
             {
                 caseScenerio++;
@@ -153,7 +151,6 @@ public class DemoEvents : MonoBehaviour
         }
         else if (caseScenerio == 4)
         {
-            rotateCube.transform.position = objectStorage;
             if (scaleCube.transform.localScale.x >= 0.31)
             {
                 conditionOne = true;

@@ -172,11 +172,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1499534004115199934, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.216
+      value: 0.0495
       objectReference: {fileID: 0}
     - target: {fileID: 1499534004115199934, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.78
+      value: 1.9973
       objectReference: {fileID: 0}
     - target: {fileID: 1499534004115199934, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -256,9 +256,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4829899150327526794, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: m_text
-      value: Finally, the gaze interaction. Focus the object on the center of your
-        screen. It will light up whenever you look at it, but will not activate if
-        your eyes are not tracking the object. You can notice this in your peripheral.
+      value: "MRTK is also able to detect certain interactions types from the user.
+        The examples that will be demonstrated will be following:\n\n- Eye Tracking\n-
+        Ray Pointing \n- Hold Detection"
       objectReference: {fileID: 0}
     - target: {fileID: 4829899150327526794, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: m_fontSize
@@ -422,21 +422,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: rayCube
       objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682070, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 0.015
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 1.531
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 1.394
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -872,21 +876,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: holdCube
       objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682070, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 0.015
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 1.531
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 1.394
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1106,21 +1114,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: gazeCube
       objectReference: {fileID: 0}
+    - target: {fileID: 3968206999201682070, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 0.015
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 1.531
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 1.394
       objectReference: {fileID: 0}
     - target: {fileID: 3968206999201682078, guid: 72eda5eed416a7747acede053f665ff8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8883,7 +8895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 52, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &206171198581276862
@@ -12948,7 +12960,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 52, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2961364750941243240
@@ -19493,7 +19505,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 52, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5179373572131625134
