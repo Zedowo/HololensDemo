@@ -22,14 +22,16 @@ public class DemoEvents : MonoBehaviour
     private bool conditionOne = false;
     private bool conditionTwo = false;
     //conditions for min max scaling
+
+    public AudioSource ring;
     private int caseScenerio = 0;
 
-    Vector3 originalPosition = new Vector3(0f, 0f, 0f);
+   /* Vector3 originalPosition = new Vector3(0f, 0f, 0f);
     Vector3 originalFlagPosition = new Vector3(0.49f, 1.57f, 1.418f);
     Vector3 originalMoveCubePosition = new Vector3(0.916f, 2.755f, 3.128f);
     Vector3 objectStorage = new Vector3(10f, 10f, 10f);
     Vector3 originalRotateCubePosition = new Vector3(-0.0071f, 1.504f, 1.2195f);
-    Vector3 originalMoveCubeHorizontalPosition = new Vector3(-0.497f, 1.54f, 1.092f);
+    Vector3 originalMoveCubeHorizontalPosition = new Vector3(-0.497f, 1.54f, 1.092f);*/
 
     void Awake()
     {
@@ -127,6 +129,7 @@ public class DemoEvents : MonoBehaviour
             if (moveCubeHorizontal.transform.position.x > .4)
             {
                 caseScenerio++;
+                ring.Play();
                 this.updateText(caseScenerio);
                 buttonEvents.updateCounterNeutral();
             }    
@@ -136,6 +139,7 @@ public class DemoEvents : MonoBehaviour
             if (moveCube.transform.position.x <= 0.51 && moveCube.transform.position.z <= 1.5)
             {
                 caseScenerio++;
+                ring.Play();
                 this.updateText(caseScenerio);
                 buttonEvents.updateCounterNeutral();
             }
@@ -145,6 +149,7 @@ public class DemoEvents : MonoBehaviour
             if (rotateCube.transform.rotation.y >= 0.9982956)
             {
                 caseScenerio++;
+                ring.Play();
                 this.updateText(caseScenerio);
                 buttonEvents.updateCounterNeutral();  
             }
@@ -162,6 +167,7 @@ public class DemoEvents : MonoBehaviour
             if (conditionOne && conditionTwo)
             {
                 caseScenerio++;
+                ring.Play();
                 this.updateText(caseScenerio);
                 buttonEvents.updateCounterNeutral();
 
