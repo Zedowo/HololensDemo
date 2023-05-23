@@ -19666,6 +19666,7 @@ GameObject:
   - component: {fileID: 4829899148730049308}
   - component: {fileID: 1499534004484619810}
   - component: {fileID: 1499534004484619811}
+  - component: {fileID: 1499534004484619812}
   m_Layer: 0
   m_Name: SlateBlank
   m_TagString: Untagged
@@ -19717,6 +19718,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dea3b9b0a9a188448a79107afdcd44f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1499534004484619812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499534004484619809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3986155c7a728454f8bbbabd2e274601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftInteractor: {fileID: 0}
+  rightInteractor: {fileID: 0}
+  trackedTargetType: 0
+  trackedHandedness: 3
+  trackedHandJoint: 0
+  transformOverride: {fileID: 0}
+  additionalOffset: {x: 0, y: 0, z: 0}
+  additionalRotation: {x: 0, y: 0, z: 0}
+  updateSolvers: 1
 --- !u!1 &1499534004545201576
 GameObject:
   m_ObjectHideFlags: 0
@@ -23345,7 +23367,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499534004484619809}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4479a0bd44d822241a4c5f4890c481c0, type: 3}
   m_Name: 
@@ -23451,8 +23473,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In order to place objects, simply pinch your fingers together. Look on
-    the Near Menu for more options to reset certain anchors.
+  m_text: The cube will follow your head, and like surface magnetism, attach to surfaces
+    in your surrounding. Hololens will automatically map our your room.  In order
+    to place objects, simply pinch your fingers together.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}
   m_sharedMaterial: {fileID: 21202819797275496, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}

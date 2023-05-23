@@ -141,7 +141,7 @@ public class InteractionEvents : MonoBehaviour
                 break;
 
             case 2:
-                textMesH.text = "Next, we'll explore the ray interaction. Point your finger towards the cube and align the ray line with box. ";
+                textMesH.text = "Next, we'll explore the ray interaction. Point your finger towards the cube and align the ray line with the box. ";
                 followMeHold.enabled = false;
                 followMeGaze.enabled = false;
                 holdCube.SetActive(false);

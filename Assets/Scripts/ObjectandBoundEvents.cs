@@ -55,8 +55,8 @@ public class ObjectandBoundEvents : MonoBehaviour
                     break;
 
                 case 1:
-                    textMesH.text = "First, let's take a look at a default interaction with all of these componenets -- no constraints added. With this box, you can move it around, change its size, and change its rotation. " +
-                    "Adjust the cube however your like. There are no constraints on the object, though you can reset the scene on the Near Menu if things get out of hand. ";
+                    textMesH.text = "First, let's take a look at a default interaction with all of these components -- no constraints added. With this box, you can move it around, change its size, and change its rotation. " +
+                    "Adjust the cube however you like. There are no constraints on the object, though you can reset the scene on the Near Menu if things get out of hand. ";
                 allCube.SetActive(true);
                 break;
 

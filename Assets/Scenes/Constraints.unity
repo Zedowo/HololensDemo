@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19757,6 +19757,15 @@ PrefabInstance:
     - target: {fileID: 3866379281715909647, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829899150327526794, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
+      propertyPath: m_text
+      value: 'These following 5 objects have these said constraints. These constraints
+        restrict certain functionalities of the user, and can also force an object
+        to behave a certain way. Some examples demonstrated here are limited interactions
+        and forced behaviors.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 4829899150327527030, guid: ac56ccd032633674897c73fbaba0737c, type: 3}
       propertyPath: allCube

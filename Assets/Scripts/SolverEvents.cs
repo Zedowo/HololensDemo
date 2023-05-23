@@ -8,14 +8,16 @@ using UnityEngine.SceneManagement;
 public class SolverEvents : MonoBehaviour
 {
     //ERROR: Back counter does not work AFTER the second case is completed. It works normally skipping through, but not when the user completes the event to move on from case 2.
-    public TextMeshPro textMesH;
-    public ButtonEventsSolver buttonEvents;
+    private TextMeshPro textMesH;
+    private ButtonEventsSolver buttonEvents;
 
     public GameObject magnetCube;
     public GameObject magnetSurface;
     public GameObject followCube;
-    public Follow followCubeScript;
+    private Follow followCubeScript;
     public GameObject followNearMenu;
+
+    public GameObject inBetweenCubes;
 
     public GameObject mainSlate;
     public GameObject mainText;
@@ -29,9 +31,9 @@ public class SolverEvents : MonoBehaviour
     public GameObject cubeLeft;
     public GameObject cubeMiddle;
     public GameObject cubeRight;
-    public Renderer cubeRendererLeft;
-    public Renderer cubeRendererMiddle;
-    public Renderer cubeRendererRight;
+    private Renderer cubeRendererLeft;
+    private Renderer cubeRendererMiddle;
+    private Renderer cubeRendererRight;
     Color black = new Color(0f, 0f, 0f, 0.8f);
     Color yellow = new Color(255f, 255f, 0f, 0.8f);
     public AudioSource ring;
@@ -69,15 +71,19 @@ public class SolverEvents : MonoBehaviour
                     "In this example, the cube will be attached to you and follow you around. Access your Near Menu for customization settings to further manipulate this interaction.";
                 break;
             case 2:
-                textMesH.text = "Another solver you may use is Surface Magnetism. As the name applies, any object with this script will magnetise" +
+                textMesH.text = "Another solver you may use is Surface Magnetism. As the name applies, any object with this script will magnetize" +
                     " to the surface it sees. In this demonstration example, try to hit all of the black points on the surface board WITHOUT moving. " +
                     "The cube should naturally track with your head. Other interaction types are also possible.";
                     break;
             case 3:
-                textMesH.text = "The next scene will explore another solver (Tap to Place) as well as the integration of solvers with spatial awareness. " +
-                    "The interface used in this scene will be vastly different than the ones before; be prepared.";
+                textMesH.text = "Next, the In Between solver. As the name implies, the object the solver is placed upon will move in between two" +
+                    " objects the user sets. This is an average distance, and will remain true no matter what axis is being manipulated.";
                 break;
             case 4:
+                textMesH.text = "The next scene will explore another solver (Tap to Place) as well as the integration of solvers with spatial awareness. " +
+                    "The interface used in this scene will be vastly different from the ones before; be prepared.";
+                break;
+            case 5:
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 break;
         }
@@ -144,12 +150,17 @@ public class SolverEvents : MonoBehaviour
                 cubeRendererMiddle.material.SetColor("_Color", black);
                 mainSlate.transform.position = newSlatePosition;
                 mainSlate.transform.eulerAngles = new Vector3(45, 0, 0);
+                inBetweenCubes.SetActive(false);
                 break;
             case 3:
                 magnetCube.SetActive(false);
                 magnetSurface.SetActive(false);
                 mainSlate.transform.position = originalSlatePosition;
                 mainSlate.transform.eulerAngles = new Vector3(0, 0, 0);
+                inBetweenCubes.SetActive(true);
+                break;
+            case 4:
+                inBetweenCubes.SetActive(false);
                 break;
         }
     }
@@ -180,13 +191,13 @@ public class SolverEvents : MonoBehaviour
 
     public void subtractMax()
     {
-        if (followCubeScript.minDistance == 0.1f)
+        if (followCubeScript.maxDistance == 0.1f)
         {
             Debug.Log("Too Low!");
         }
         else
         {
-            followCubeScript.minDistance -= 0.1f;
+            followCubeScript.maxDistance -= 0.1f;
         }
     }
 

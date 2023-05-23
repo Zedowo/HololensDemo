@@ -61,8 +61,8 @@ public class VoiceCommandEvents : MonoBehaviour
                 break;
 
             case 2:
-                textMesH.text = "If we go back to the idea of an object being a microphone, you will find that voice recognition will work seperately between " +
-                    "objects of difference sizes and distances. The bigger the microphone, the more it hears. The closer you are to the microphone, the better it hears." +
+                textMesH.text = "If we go back to the idea of an object being a microphone, you will find that voice recognition will work separately between " +
+                    "objects of different sizes and distances. The bigger the microphone, the more it hears. The closer you are to the microphone, the better it hears." +
                     " Of course, you can also simply see microphones to the user for a universal command.";
                 break;
             case 3:
