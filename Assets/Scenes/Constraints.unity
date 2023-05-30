@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -20431,7 +20431,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 0}
+  constraintsManager: {fileID: 6325399772985384908}
   manipulationLogicTypes:
     moveLogicType:
       reference: Microsoft.MixedReality.Toolkit.SpatialManipulation.MoveLogic, Microsoft.MixedReality.Toolkit.SpatialManipulation
@@ -22280,6 +22280,34 @@ PrefabInstance:
     - target: {fileID: 8450054582023134297, guid: 528105769bfaffd45850ad52247a98ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450054582023134302, guid: 528105769bfaffd45850ad52247a98ab, type: 3}
+      propertyPath: maximumScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450054582023134302, guid: 528105769bfaffd45850ad52247a98ab, type: 3}
+      propertyPath: maximumScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450054582023134302, guid: 528105769bfaffd45850ad52247a98ab, type: 3}
+      propertyPath: maximumScale.z
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450054582023134302, guid: 528105769bfaffd45850ad52247a98ab, type: 3}
+      propertyPath: minimumScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450054582023134302, guid: 528105769bfaffd45850ad52247a98ab, type: 3}
+      propertyPath: minimumScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450054582023134302, guid: 528105769bfaffd45850ad52247a98ab, type: 3}
+      propertyPath: minimumScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450054582023134302, guid: 528105769bfaffd45850ad52247a98ab, type: 3}
+      propertyPath: relativeToInitialState
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8450054582023134303, guid: 528105769bfaffd45850ad52247a98ab, type: 3}
       propertyPath: targetToFace

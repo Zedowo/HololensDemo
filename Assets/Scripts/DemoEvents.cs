@@ -70,7 +70,7 @@ public class DemoEvents : MonoBehaviour
                 break;
 
             case (2):
-                textMesH.text = "Try to move the red cube on the top right. In order to do so, hover your hand over the box. You should see a dotted line originating from your pointer. Hold down your hand. The line should turn solid, and you should see the box highlighted." +
+                textMesH.text = "Try to move the red cube on the top right. In order to do so, hover your hand over the box. You should see a dotted line originating from your pointer finger. Pinch your hand together. The line should turn solid, and you should see the box highlighted." +
                                 "\r\n\r\nDrag the box in the highlighted area by pulling the cube closer to you.";
                 break;
 
